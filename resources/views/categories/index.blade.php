@@ -19,7 +19,7 @@
         @endif
 
             <label for="exampleFormControlInput1" class="form-label">Nombre de la categoría</label>
-            <input type="text" class="form-control mb-2" name="name" id="exampleFormControlInput1" placeholder="Hogar">
+            <input type="text" class="form-control mb-2" name="name" id="exampleFormControlInput1">
             
             <input type="submit" value="Crear tarea" class="btn btn-primary my-2" />
         </div>

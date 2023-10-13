@@ -26,13 +26,13 @@ class TodosController extends Controller
         $todo->category_id = $request->category_id;
         $todo->save();
     
-        return redirect()->route('todos')->with('success', 'Todo created successfully');
+        return redirect()->route('todos')->with('success', 'Tarea creada');
     }
 
     public function destroy($id){
         $todo = Todo::find($id);
         $todo->delete();
-        return redirect()->route('todos')->with('success', 'Todo deleted successfully');
+        return redirect()->route('todos')->with('success', 'Tarea eliminado');
     }
 
     public function show($id){
@@ -47,6 +47,6 @@ class TodosController extends Controller
         $todo->title = $request->title;
         $todo->save();
 
-        return redirect()->route('todos')->with('success', 'Todo updated successfully');
+        return redirect()->route('todos')->with('success', 'Tarea actualizada');
     }
 }
